@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+{% block encabezado %}
+
+<head></head>
+{% endblock %}
+
+
+{% block contenido %}
+<style> 
+body {
+    font-family: Helvetica;
+    margin: 25px;
+    background-color: #F6EFF9;
+    }
+    
+h2 {
+    text-align: left;
+    color: #420F58;
+    }
+</style>
+<body>
+    <h2>Mis Datos: </h2>
+    <p><b>Nombres:</b> {{nombres}} <p></p>
+    <p><b>Primer Apellido:</b> {{primer_apellido}} <p></p>
+    <p><b>Segundo Apellido:</b> {{segundo_apellido}} <p></p>
+    <p><b>Fecha de Nacimiento:</b> {{fecha_nacimiento}} <p></p>
+    <p><b>Numero de celular:</b> {{celular}} <p></p>
+    <p><b>Correo electrónico:</b> {{correo}} <p></p>
+    <p><b>Dirección:</b> {{domicilio}} <p></p>
+    <p><b>Género:</b> {{genero}} <p></p>
+    <p><b>Objetivo:</b> {{objetivo}} <p></p>
+    <p><b>salario Deseado:</b> {{salario_esperado}} <p></p>
+    <br>
+    <h2>Mis Skills: </h2>
+    <ul style="list-style-type: circle;">
+        <li> {{s0}} </li>
+        <li> {{s1}} </li>
+        <li> {{s2}} </li>
+        <li> {{s3}} </li>
+        <li> {{s4}} </li>
+        <li> {{s5}} </li>
+    </ul>
+    <br>
+    <h2>Mi Experiencia: </h2>
+    <table cellspacing="5", cellpadding="5", border="2", bgcolor="EFE4F3", bordercolor="420F58">
+        <tr>
+            <th align="center">Empresa</th>
+            <th align="center">Año de inicio</th>
+            <th align="center">Año de fin</th>
+            <th align="center">Puesto</th>
+        </tr>
+        <tr>
+            <td align="left">{{lugar_trabajo1}}</td>
+            <td align="left">{{año_inicio1}}</td>
+            <td align="left">{{año_fin1}}</td>
+            <td align="left">{{puesto1}}</td>
+        </tr>
+        <tr>
+            <td align="left">{{lugar_trabajo2}}</td>
+            <td align="left">{{año_inicio2}}</td>
+            <td align="left">{{año_fin2}}</td>
+            <td align="left">{{puesto2}}</td>
+        </tr>
+
+    </table>
+</body>
+
+
+{% endblock %}
+
+</html>
